@@ -1,0 +1,14 @@
+2. Answers to Questions
+a. What happens when the number of hidden nodes increases?
+
+As the number of hidden nodes in the neural network increases, the model's complexity and capacity to learn intricate patterns from the data also increase. This leads to three potential outcomes:
+
+Underfitting: With too few hidden nodes (e.g., 1-3), the model is too simple to capture the complex, non-linear boundary of the "flower" dataset. This results in poor performance and low accuracy.
+
+Good Fit: With an optimal number of hidden nodes (e.g., 4-5), the model has sufficient complexity to learn the non-linear patterns without being overly influenced by noise. This typically results in high accuracy.
+
+Overfitting: With a very large number of hidden nodes (e.g., 20 or 50), the model can become too powerful. It may start to memorize the training data, including random noise, rather than learning the general underlying trend. While this leads to extremely high accuracy on the training data, the model may perform poorly on new, unseen data.
+
+b. Can you explain the pattern of the accuracy when the hidden nodes increase?
+
+The pattern of accuracy shows a clear trend. Initially, as the number of hidden nodes increases from 1 to about 4 or 5, the accuracy improves significantly. This is because each additional node increases the model's ability to create a more complex and flexible decision boundary that can better separate the red and blue points of the non-linear dataset. Beyond this optimal point, increasing the number of nodes further (e.g., to 20 or 50) results in only marginal gains in accuracy on the training set. The accuracy may plateau at a very high level (e.g., 90-91%). This is because the model has already captured the main pattern, and additional nodes primarily help it fit the remaining noisy or outlier data points, which is a sign of overfitting.
